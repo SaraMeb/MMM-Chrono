@@ -1,0 +1,79 @@
+
+@font-face {
+    font-family: "Orbitron";
+    src: url("./fonts/Orbitron-Regular.ttf") format("ttf"),
+    url("./fonts/orbitron-v14-latin-regular.woff") format("woff");
+}
+
+html,
+body {
+    height: 100%;
+}
+
+
+body {
+    background: #1b1e23;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chronoForm {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.chronotime {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #17D4FE;
+    font-family: "Orbitron", Helvetica, sans-serif;
+    background-color: #1b1e23;
+    font-size: 3em;
+    letter-spacing: 7px;
+    border: none;
+}
+
+.chronoStop:focus, .chronoReset:focus, .chronotime:focus {
+    outline: 0;
+}
+
+.chronoStop {
+    position: absolute;
+    top: 48%;
+    right: 35%;
+    font-weight: bold;
+    font-family: "Orbitron", Helvetica, sans-serif;
+    font-size: 1.5em;
+    border: #17D4FE 1px solid;
+    color: #17D4FE;
+    background-color: #1b1e23;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.chronoStop:hover, .chronoReset:hover {
+    background-color: #17D4FE;
+    color: #1b1e23;
+
+}
+
+.chronoReset {
+    position: absolute;
+    top: 48%;
+    right: 28%;
+    font-weight: bold;
+    font-family: "Orbitron", Helvetica, sans-serif;
+    font-size: 1.5em;
+    border: #17D4FE 1px solid;
+    color: #17D4FE;
+    background-color: #1b1e23;
+    border-radius: 10px;
+    padding: 10px;
+}
